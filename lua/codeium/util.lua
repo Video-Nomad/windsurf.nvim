@@ -33,7 +33,7 @@ function M.get_editor_options(bufnr)
 end
 
 function M.get_newline(bufnr)
-	return enums.line_endings[vim.bo[bufnr].fileformat] or "\n"
+	return "\n"
 end
 
 local cached_roots = {}
